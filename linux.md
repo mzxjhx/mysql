@@ -33,8 +33,21 @@ vim /etc/profile
 export PATH=$PATH:/usr/local/redis-6.0.5/src
 ```
 
+#### Linux环境变量配置方法五：vim /etc/profile 安装jdk1.8
+```shell
+    export JAVA_HOME=jdk路径
+    export JRE_HOME=jdk路径/jre
+    export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib
+    export PATH=${PATH}:${JAVA_HOME}/bin:${JRE_HOME}/bin
+    
+    //wq退出保存
+    source /etc/profile
+```
+
 #### 查看Linux环境变量
 ```shell
     export $PATH
     echo $PATH
 ```
+
+
